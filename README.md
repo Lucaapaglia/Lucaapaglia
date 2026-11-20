@@ -1,80 +1,26 @@
 # Luca Paglia
 
-**Entry-Level IT & Cybersecurity · Copenhagen, Denmark**
+**IT Support & Service Desk · Copenhagen, Denmark**
 
-I'm transitioning into IT after several years of hands-on technical work. My current focus is Windows administration, IT support, networking, PowerShell, and cybersecurity.
+During an informal IT support internship at Rosario City Council, I helped staff set up Windows and macOS workstations, install software and troubleshoot configuration issues. I'm looking for an onsite IT support or service desk role in Copenhagen.
 
-I'm looking for opportunities in **IT Support, Service Desk, IT Technician, Technical Support, Junior IT Operations, and entry-level security roles**.
+[Connect on LinkedIn](https://www.linkedin.com/in/luca-paglia/) · [Explore my Windows helpdesk lab](https://github.com/Lucaapaglia/windows-enterprise-helpdesk-lab)
 
-## Featured projects
+## Three tickets from my Windows lab
 
-### Windows Enterprise Helpdesk Lab
+I built a Windows Server 2025 domain and joined a Windows 11 workstation to it. I used the workstation to check what a user could actually do after each fix.
 
-[![Windows Enterprise Helpdesk Lab architecture](https://raw.githubusercontent.com/Lucaapaglia/windows-enterprise-helpdesk-lab/main/00-lab-architecture.svg)](https://github.com/Lucaapaglia/windows-enterprise-helpdesk-lab)
+| Support ticket | What I found and verified |
+| --- | --- |
+| [A Finance user gets “Access is denied”](https://github.com/Lucaapaglia/windows-enterprise-helpdesk-lab/blob/main/tickets/001-finance-share-access.md) | The account was missing from the Finance group. After I restored membership and the user signed in again, they could open the share and create a file. |
+| [Windows refuses a domain user's sign-in](https://github.com/Lucaapaglia/windows-enterprise-helpdesk-lab/blob/main/tickets/002-workstation-inherited-domain-controller-policy.md) | Security event 4625 led me to a workstation inheriting domain controller policy. After I corrected the OU placement and restarted the PC, a standard user could sign in. |
+| [The server answers by IP, but Group Policy fails](https://github.com/Lucaapaglia/windows-enterprise-helpdesk-lab/blob/main/tickets/005-incorrect-dns-breaks-domain-services.md) | Port 445 answered by IP while the server name timed out. After I corrected the client's DNS setting, the name resolved and both user and computer policy updated. |
 
-A Windows enterprise lab built to simulate practical helpdesk and junior systems-administration work.
+## Account administration and user support
 
-**What I implemented**
-- Windows Server 2025 Active Directory domain
-- DNS and domain-joined Windows 11 workstation
-- Organizational Units and department security groups
-- AGDLP-style access control
-- SMB shares and NTFS permissions
-- Group Policy and department drive mappings
-- delegated least-privilege helpdesk administration
-- PowerShell onboarding and offboarding automation
-- DNS, Group Policy, authentication, and permissions troubleshooting
-- documented troubleshooting tickets and validation evidence
+- **Active Directory and PowerShell.** I used a delegated helpdesk account to onboard and offboard lab users. The scripts preview changes with `-WhatIf`. I also tested a fresh sign-in after disabling an account. [Scripts](https://github.com/Lucaapaglia/windows-enterprise-helpdesk-lab/tree/main/scripts) · [Delegated account tests](https://github.com/Lucaapaglia/windows-enterprise-helpdesk-lab/blob/main/docs/delegated-helpdesk-administration.md)
+- **Writing for users.** A missing drive letter and a permission error can look like the same problem. This guide helps a Finance user tell them apart and report exactly what happened. [My Finance drive is missing](https://github.com/Lucaapaglia/windows-enterprise-helpdesk-lab/blob/main/docs/finance-drive-help.md)
 
-**Tech:** Windows Server · Active Directory · Group Policy · DNS · SMB/NTFS · PowerShell · Windows 11
+I also built a browser-based chess analysis board with React and Stockfish. Its automated tests run in GitHub Actions. [Chess project](https://github.com/Lucaapaglia/chessapp)
 
-[View repository →](https://github.com/Lucaapaglia/windows-enterprise-helpdesk-lab)
-
----
-
-### Stockfish Analysis Board
-
-[![Stockfish Analysis Board](https://raw.githubusercontent.com/Lucaapaglia/chessapp/master/docs/screenshots/stockfish-analysis-board.webp)](https://lucaapaglia.github.io/chessapp/)
-
-A browser-based chess analysis application that runs Stockfish 16.1 locally through a Web Worker and WebAssembly.
-
-**What I implemented**
-- legal move validation with Chess.js
-- non-blocking Stockfish analysis in a Web Worker
-- UCI engine synchronization
-- evaluation bar, best-move arrows, depth, and principal variation
-- move-history navigation and keyboard controls
-- FEN / PGN tools and promotion handling
-- automated tests and GitHub Actions CI/CD
-- GitHub Pages deployment
-
-**Tech:** React · JavaScript · Chess.js · Web Workers · WebAssembly · GitHub Actions
-
-[Live demo →](https://lucaapaglia.github.io/chessapp/) · [View repository →](https://github.com/Lucaapaglia/chessapp)
-
-## Technical skills
-
-| Area | Skills |
-|---|---|
-| **Windows / IT Support** | Windows 10/11, Active Directory, Group Policy, user/group administration, SMB shares, NTFS permissions, PowerShell, troubleshooting |
-| **Networking** | TCP/IP, DNS, HTTP/HTTPS, routing fundamentals, Nmap, Wireshark, tcpdump, SSH |
-| **Linux** | Kali Linux, Ubuntu, terminal, permissions, grep, SSH |
-| **Cybersecurity** | enumeration, web security fundamentals, Burp Suite, Metasploit, Hydra, John the Ripper, SIEM/SOC fundamentals |
-| **Development** | JavaScript, React, HTML, CSS, REST APIs, Git, npm |
-| **Automation / tooling** | PowerShell, GitHub Actions, Web Workers |
-
-## Learning and practice
-
-- TryHackMe hands-on cybersecurity labs
-- freeCodeCamp web-development certifications
-- Codewars programming practice
-- building practical labs around support, infrastructure, automation, and security
-
-## Current focus
-
-I'm currently strengthening the Microsoft / Windows side of my profile while applying for entry-level IT roles in Copenhagen. My longer-term direction is cybersecurity, with a particular interest in offensive security and penetration testing.
-
----
-
-**Languages:** Spanish · English · Italian · Danish  
-**Location:** Copenhagen, Denmark
+**Languages** · English (fluent), Danish (B1), Spanish (native), Italian (conversational)
