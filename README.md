@@ -21,6 +21,8 @@ I built a Windows Server 2025 domain and joined a Windows 11 workstation to it. 
 - **Active Directory and PowerShell.** I used a delegated helpdesk account to onboard and offboard lab users. The scripts preview changes with `-WhatIf`. I also tested a fresh sign-in after disabling an account. [Scripts](https://github.com/Lucaapaglia/windows-enterprise-helpdesk-lab/tree/main/scripts) · [Delegated account tests](https://github.com/Lucaapaglia/windows-enterprise-helpdesk-lab/blob/main/docs/delegated-helpdesk-administration.md)
 - **Writing for users.** A missing drive letter and a permission error can look like the same problem. This guide helps a Finance user tell them apart and report exactly what happened. [My Finance drive is missing](https://github.com/Lucaapaglia/windows-enterprise-helpdesk-lab/blob/main/docs/finance-drive-help.md)
 
+My [Microsoft 365 service desk lab](https://github.com/Lucaapaglia/microsoft-365-service-desk-lab) is an offline shift with four fictional tickets covering mailbox access, device compliance, mail delays and meeting-room audio.
+
 I also built a browser-based chess analysis board with React and Stockfish. Its automated tests run in GitHub Actions. [Chess project](https://github.com/Lucaapaglia/chessapp)
 
 **Languages** · English (fluent), Danish (B1), Spanish (native), Italian (conversational)
